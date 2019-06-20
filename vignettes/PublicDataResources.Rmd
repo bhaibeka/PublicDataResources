@@ -1384,7 +1384,7 @@ Notably, the Genomics of Drug Sensitivity in Cancer [GDSC](https://www.cancerrxg
 
 #### Drug Perturbation Datasets
 
-Drug perturbation datasets refer to pharmacogenomic data where gene expression profiles are measured before and after short-term (e.g., 6h) drug treatment to identify genes that are up- and down-regulated due to the drug treatment. These datasets can be to classify drug (drug taxonomy), infer their mechanism of action, or find drugs with similar effects (drug repurposing).
+Drug perturbation datasets refer to pharmacogenomic data where gene expression profiles are measured before and after short-term (e.g., 6h) drug treatment to identify genes that are up- and down-regulated due to the drug treatment. These datasets can be used to classify drug (drug taxonomy), infer their mechanism of action, or find drugs with similar effects (drug repurposing).
 
 [Schematic view of drug perturbation datasets](`r system.file(package='PublicDataResources', 'vignettes', 'Drug_perturbation.png')`)
 
@@ -1392,11 +1392,11 @@ Drug perturbation datasets refer to pharmacogenomic data where gene expression p
 psets <- availablePSets(saveDir=file.path(".", "Waldron_PublicData"))
 psets[psets[ , "Dataset.Type"] == "perturbation", ]
 ```
-Large drug perturbation data have been generated within the Connectivity Map Project [CAMP](https://clue.io/cmap), with CMAPv2 and CMAPv3 available from `PharmacoGx`, published in [Lamb et al., The Connectivity Map: Using Gene-Expression Signatures to Connect Small Molecules, Genes, and Disease, Science (2006)](http://science.sciencemag.org/content/313/5795/1929) and [Subramanian et al., A Next Generation Connectivity Map: L1000 Platform and the First 1,000,000 Profiles, Cell (2017)](https://www.cell.com/cell/abstract/S0092-8674(17)31309-0), respectively.
+Large drug perturbation data have been generated within the Connectivity Map Project [CMAP](https://clue.io/cmap), with CMAPv2 and CMAPv3 available from `PharmacoGx`, published in [Lamb et al., The Connectivity Map: Using Gene-Expression Signatures to Connect Small Molecules, Genes, and Disease, Science (2006)](http://science.sciencemag.org/content/313/5795/1929) and [Subramanian et al., A Next Generation Connectivity Map: L1000 Platform and the First 1,000,000 Profiles, Cell (2017)](https://www.cell.com/cell/abstract/S0092-8674(17)31309-0), respectively.
  
 ### Exploring drug sensitivity datasets
 
-The [Biomarker discovery from large pharmacogenomics datasets](https://bioconductor.github.io/BiocWorkshops/biomarker-discovery-from-large-pharmacogenomics-datasets.html) workshop demonstrates analyses of `r BiocStyle::Biocpkg("PharmacoGx")` data.
+If you wnat to know more about how you can use these large-scale pharmacogenomic data for biomarker discovery, please refer to the [Biomarker discovery from large pharmacogenomics datasets](https://bioconductor.github.io/BiocWorkshops/biomarker-discovery-from-large-pharmacogenomics-datasets.html).
 
 ## Bibliography
 
